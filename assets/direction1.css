@@ -1,3 +1,72 @@
-body {
-	color: red;
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Xanh+Mono:ital@0;1&display=swap');
+@font-face {
+	font-family: "Maragsa";
+	src: url("/fonts/Maragsa-Display.otf");
+  }
+  @font-face {
+	font-family: "Back Out";
+	src: url("/fonts/BackOut.otf");
+  }
+
+
+:root {
+	--root-size: 1.2rem;
+	--main-bg-color: #0F1314;
+	--main-text-color: #edebeb;
 }
+
+body {
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color); 
+}
+
+
+/* TITLE */
+
+header{
+	position: relative;
+}
+
+/* Design */
+.folded-paper {
+    background: #D15DDC;
+    position: relative;
+	left: 15vw;
+	top: 20vh;
+    display: block;
+    padding: 5px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+	width: calc(var(--root-size) * 35);
+	height: calc(var(--root-size) * 10);
+	transform: rotate(-5deg);
+}
+
+.folded-paper:before {
+    content: "";
+    position: absolute;
+    top: -1;
+    right: -1;
+    border-width: 0 45px 45px 0;
+    border-style: solid;
+    border-color: #FFFB63 var(--main-bg-color);
+    /* transition: 0.3s; */
+    border-radius: 0 0 0 10px;
+}
+
+
+.line:nth-of-type(1) {
+    color: black;
+	font-family: "Major Mono Display", monospace;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: calc(var(--root-size) * 7);
+	position: absolute;
+	align-items: center;
+	padding: 1rem;
+}
+
+
+
