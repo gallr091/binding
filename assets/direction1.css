@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Xanh+Mono:ital@0;1&display=swap');
 
 @font-face {
 	font-family: "Maragsa";
@@ -15,6 +15,7 @@
 body {
 	background-color: var(--main-bg-color);
 	color: var(--main-text-color); 
+	overflow-x: hidden;
 }
 
 /* TITLE */
@@ -64,23 +65,21 @@ header {
 /* Thinking */
 .line-thinking {
     font-family: "Maragsa", serif; 
-    font-size: calc(var(--root-size) * 2.5);
+    font-size: calc(var(--root-size) * 2.8);
     color: var(--main-bg-color);
-	/* color: white; */
     text-align: center;
     position: absolute;
-	/* top: 25vh;  */
-	margin-top: 2.5rem;
-	margin-left: 6.7rem;
-    transform: translateX(-50%);
+	margin-top: 2.7rem;
+	margin-left: 1.5rem;
+    /* transform: translateX(-50%); */
 	z-index: 4;
 }
 
 .three-ellipses-container {
     position: absolute;
-    left: 20%;
+    left: 25%;
     z-index: 2;
-	top: 23vh;
+	top: 22vh;
 }
 
 .ellipses-wrapper {
@@ -104,11 +103,54 @@ header {
 
 .ellipse:nth-child(2) {
     z-index: 2;
-    left: 60px;
+    left: 70px;
 }
 
 .ellipse:nth-child(3) {
     z-index: 3;
-    left: 120px;
+    left: 140px;
 }
+
+/* Is */
+.star-container {
+	position: absolute;
+	top: 40vh;
+	left: 35%;
+	transform: translateX(-50%);
+	z-index: 5;
+  }
+  
+  .star8 {
+	background: #FC5A12;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	transform: rotate(20deg); /* Rotate to create the first set of points */
+  }
+  
+  .star8:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	background: #FC5A12;
+	transform: rotate(45deg); /* Rotate to create the second set of points */
+  }
+  
+  /* Styling the "is" text inside the star */
+  .line-is {
+	position: absolute;
+	z-index: 1; /* Ensure the text is above the star shape */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Center the text inside the star */
+	color:  var(--main-bg-color);
+	font-size: calc(var(--root-size) * 2);
+	margin: 0; /* Remove any default margin for h1 */
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
 
