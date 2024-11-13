@@ -125,7 +125,8 @@ header {
 	width: 80px;
 	height: 80px;
 	position: relative;
-	transform: rotate(20deg); /* Rotate to create the first set of points */
+	transform: rotate(20deg); 
+	border-radius: 10px;
   }
   
   .star8:before {
@@ -136,21 +137,76 @@ header {
 	width: 80px;
 	height: 80px;
 	background: #FC5A12;
-	transform: rotate(45deg); /* Rotate to create the second set of points */
+	transform: rotate(45deg); 
+	border-radius: 10px;
   }
   
-  /* Styling the "is" text inside the star */
   .line-is {
 	position: absolute;
-	z-index: 1; /* Ensure the text is above the star shape */
+	z-index: 1; 
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); /* Center the text inside the star */
+	transform: translate(-50%, -50%); 
 	color:  var(--main-bg-color);
 	font-size: calc(var(--root-size) * 2);
-	margin: 0; /* Remove any default margin for h1 */
+	margin: 0; 
 	font-family: "Poppins", serif;
 	font-weight: 400;
 	font-style: normal;
   }
+
+  /* A */
+.circle-container {
+	display: block;  
+	width: 80px;          
+	height: 80px;          
+	border-radius: 50%;     
+	background-color: #62FF24; 
+	display: flex;         
+	align-items: center;    
+	justify-content: center; 
+	position: absolute;
+	top: 39vh;
+	left: 53%;
+	z-index: 7;
+  }
+  
+  .line-a {
+	margin: 0;             
+	color: var(--main-bg-color);
+	font-size: calc(var(--root-size) * 2);
+	font-family: "Poppins", serif;
+	font-weight: 600;
+	font-style: italic;
+  }
+
+
+  /* Rebrand */
+.oval-container {
+	display: block;  
+	width: 300px;          
+	height: 100px;          
+	border-radius: 50px;     
+	background-color: #FFFB63; 
+	display: flex;         
+	align-items: center;    
+	justify-content: center; 
+	position: absolute;
+	top: 50vh;
+	left: 20%;
+	z-index: 2;
+	transform: rotate(-5deg);
+  }
+  
+  .line-rebrand {
+	margin: 0;             
+	color: var(--main-bg-color);
+	font-size: calc(var(--root-size) * 3);
+	font-family: "Pinyon Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	padding-top: 0.5rem;
+  }
+  
+  
 
