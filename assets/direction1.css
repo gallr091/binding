@@ -10,6 +10,11 @@
 	--root-size: 1.2rem;
 	--main-bg-color: #0F1314;
 	--main-text-color: #edebeb;
+	--green-color: #62FF24; 
+	--magenta-color: #D15DDC;
+	--blue-color: #7CC6FF;
+	--yellow-color: #FFFB63;
+	--orange-color: #FC5A12;
 }
 
 body {
@@ -21,6 +26,12 @@ body {
 	font-style: normal;
 }
 
+.direction1-wrapper {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 /* NAVIGATION */
 ul {
 	list-style-type: none;
@@ -30,6 +41,8 @@ ul {
 	min-width: 100vw;
 	display: flex;
 	justify-content: space-between;
+	margin-left: 1rem;
+	margin-right: 1rem;
   }
   
   li {
@@ -53,6 +66,7 @@ header {
 	/* left: calc(var(--root-size) * 1.2); */
 	transform: scale(0.9);
 	margin-top: -3rem;
+	display: block;
 }
 
 /* Design */
@@ -379,8 +393,95 @@ h2 {
 	top: 98vh;
 }
 
+.divider{
+	height: 1px;
+	width: 100vw;
+	background: var(--main-text-color);
+	position: relative;
+	top: 99vh;
+}
 
 
+/* INTRO */
+.intro-section {
+	display: block;
+	position: relative;
+	top: 50rem;
+	margin: 1rem;
+	font-weight: 300;
+}
+
+
+.three-ellipses-container-3 {
+    position: relative;
+    margin-bottom: -7rem;
+    left: 15%;
+    z-index: 2;
+	max-width: 220px;
+}
+
+.ellipses-wrapper-3 {
+    position: relative;
+    width: 220px; 
+    height: 130px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transform: scale(0.9);
+}
+
+.ellipse-3 {
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--yellow-color);
+    position: absolute;
+}
+
+.ellipse-3:nth-child(1) {
+    left: 0;
+}
+
+.ellipse-3:nth-child(2) {
+    left: 70px;
+}
+
+.ellipse-3:nth-child(3) {
+    left: 140px;
+}
+
+.introduction {
+    font-family: "Maragsa", serif;
+    font-size: calc(var(--root-size) * 1.8);
+    color: var(--main-bg-color);
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+	margin-left: 0.8rem;
+}
+
+
+.intro-text {
+	display: block;
+	position: relative;
+	top: 10rem;
+	margin: 1rem;
+	font-weight: 300;
+}
+
+
+.intro-text p {
+	margin-bottom: 2rem;
+}
+
+mark {
+	font-weight: 600;
+	background-color: var(--magenta-color);
+	color: var(--main-bg-color);
+}
 
 
   
