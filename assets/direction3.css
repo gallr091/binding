@@ -1,3 +1,117 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Notable&family=Noto+Sans:ital,wght@0,300;1,300&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&family=Xanh+Mono:ital@0;1&display=swap');
+
+@font-face {
+	font-family: "BackOut";
+	src: url("/fonts/BackOut.otf") format("opentype");
+}
+
+
+/* hide other directions */
+.direction1-wrapper {
+	display: none;
+}
+
+.direction2-wrapper {
+	display: none;
+}
+
+
+:root {
+	--root-size: 1.2rem;
+	--main-black-color: #181716;
+	--main-white-color: #f2f0ef;
+	--display-text-font:  "Notable", sans-serif;
+	--display-text-font-weight: 400;
+}
+  
+
 body {
-	color: blue;
+    font-family: "Lora", serif;
+  	font-optical-sizing: auto;
+  	font-weight:300;
+  	font-style: normal;
+	color: var(--main-white-color);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 30vw 1fr; 
+    grid-template-rows: 100vh; 
+    height: 100vh;
+	background: var(--main-white-color);
+}
+
+.title {
+    background-color: var(--main-black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    position: fixed;
+    width: 30vw; 
+    padding: 1rem;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-family: "BackOut";
+    font-size: calc(var(--root-size) * 2); 
+    line-height: 3rem;
+    text-align: center; 
+    word-spacing: 0.2rem; 
+    letter-spacing: 0.1rem; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    width: 100%; 
+    max-height: 100%; 
+    display: block;
+	color: var(--main-white-color);
+}
+
+summary {
+	font-family: "BackOut";
+}
+
+.content {
+	width: 70vw;
+	margin-left: 30vw;
+    padding: 2rem;
+    background-color: var(--main-white-color);
+    overflow-y: auto;
+}
+
+details {
+    margin-bottom: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    background-color: var(--main-black-color);
+    padding: 10px;
+    font-size: 1.5rem;
+    /* border-radius: 5px; */
+    transition: background-color 0.3s ease;
+}
+
+summary:hover {
+    background-color:#BA0021;
+}
+
+.section-content {
+    margin-top: 1rem;
+    padding: 3rem;
+    background-color: transparent;
+    border-left: 3px solid var(--main-black-color);
+}
+
+article {
+	color: var(--main-black-color);
+	margin: 0.5rem;
+}
+
+article p {
+	margin-bottom: 2rem;
 }
