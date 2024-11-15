@@ -30,13 +30,17 @@ body {
 	font-style: normal;
 }
 
+/* hide other directions */
+.direction2-wrapper {
+	display: none;
+}
+
 .direction1-wrapper {
 	display: flex;
     flex-direction: column;
     align-items: flex-start;
 	height: auto;
 	overflow-x: hidden;
-
 }
 
 
