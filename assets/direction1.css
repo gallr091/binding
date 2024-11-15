@@ -17,6 +17,10 @@
 	--orange-color: #FC5A12;
 }
 
+/* * {
+    outline: 5px solid red;
+} */
+
 body {
 	background-color: var(--main-bg-color);
 	color: var(--main-text-color); 
@@ -32,18 +36,23 @@ body {
     align-items: flex-start;
 }
 
+.direction1-wrapper {
+	height: auto;
+}
+
 /* NAVIGATION */
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	min-width: 100vw;
+	overflow-x: hidden;
 	display: flex;
 	justify-content: space-between;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	width: 90%;
   }
+
   
   li {
 	font-size: calc(var(--root-size) * 0.5);
@@ -67,6 +76,7 @@ header {
 	transform: scale(0.9);
 	margin-top: -3rem;
 	display: block;
+	max-height: 98vh;
 }
 
 /* Design */
@@ -303,7 +313,6 @@ header {
 	z-index: 2; 
 }
 
-
   .ellipses-wrapper-2{
 	display: flex;
     justify-content: center;
@@ -395,7 +404,7 @@ h2 {
 
 .divider{
 	height: 1px;
-	width: 100vw;
+	width: 100%;
 	background: var(--main-text-color);
 	position: relative;
 	top: 99vh;
@@ -409,13 +418,18 @@ h2 {
 	top: 50rem;
 	margin: 1rem;
 	font-weight: 300;
+	/* height: auto; */
 }
 
 
 .three-ellipses-container-3 {
-    position: relative;
+    position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
     margin-bottom: -7rem;
-    left: 15%;
+    /* left: 20%; */
+	justify-content: center;
+    align-items: center;
     z-index: 2;
 	max-width: 220px;
 }
@@ -469,6 +483,7 @@ h2 {
 	position: relative;
 	top: 10rem;
 	font-weight: 300;
+	height: 100%;
 }
 
 
@@ -482,7 +497,98 @@ mark {
 	color: var(--main-bg-color);
 }
 
+.divider:nth-of-type(2){
+	height: 1px;
+	width: 100%;
+	background: var(--main-text-color);
+	position: relative;
+	top: 40vh;
+}
+
+
 
   
-  
+/* MODERNISM'S ODE TO WHITE SUPREMACY */
+.modernism-section {
+	display: block;
+	position: relative;
+	top: 50rem;
+	margin: 1rem;
+	font-weight: 300;
+}
 
+.section-title {
+	position: relative; 
+	max-width: 400px;
+	width: 90vw; 
+	height: auto;
+	display: flex;
+	justify-content: center; 
+}
+
+.oval-container-2 {
+	width: 250px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: var(--magenta-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 45vh; 
+	transform: rotate(5deg);
+	z-index: 2;
+}
+
+.modernisms {
+	margin: 0;
+	color: var(--main-bg-color);
+	font-size: calc(var(--root-size) * 2.5);
+	font-family: "Pinyon Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	top: 0;
+}
+
+.star-container-2 {
+	position: absolute;
+	top: 55vh;
+	left: 35%;
+	transform: translateX(-50%);
+	z-index: 5;
+  }
+  
+  .star8-2 {
+	background: var(--green-color);
+	width: 70px;
+	height: 70px;
+	position: relative;
+	transform: rotate(-20deg); 
+	border-radius: 10px;
+  }
+  
+  .star8-2:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 70px;
+	background: var(--green-color);
+	transform: rotate(-45deg); 
+	border-radius: 10px;
+  }
+  
+  .ode {
+	position: absolute;
+	z-index: 1; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	color:  var(--main-bg-color);
+	font-size: calc(var(--root-size) * 1.5);
+	margin: 0; 
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
