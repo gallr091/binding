@@ -1,6 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Notable&family=Noto+Sans:ital,wght@0,300;1,300&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&family=Xanh+Mono:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Notable&family=Noto+Sans:ital,wght@0,300;1,300&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&family=Xanh+Mono:ital@0;1&display=swap');
 @font-face {
 	font-family: "BackOut";
 	src: url("/fonts/BackOut.otf") format("opentype");
@@ -16,31 +15,44 @@
 	display: none;
 }
 
+.direction3-wrapper {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+}
+
 
 :root {
 	--root-size: 1.2rem;
 	--main-black-color: #181716;
 	--main-white-color: #f2f0ef;
+	--main-pink-color: #FFABF0;
+	--main-green-color: #A5D191;
 	--display-text-font:  "Notable", sans-serif;
 	--display-text-font-weight: 400;
 }
   
 
 body {
-    font-family: "Lora", serif;
-  	font-optical-sizing: auto;
-  	font-weight:300;
+	font-family: "Space Grotesk", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
   	font-style: normal;
-	color: var(--main-white-color);
+	color: var(--main-pink-color);
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: 30vw 1fr; 
     grid-template-rows: 100vh; 
     height: 100vh;
-	background: var(--main-white-color);
+	background: var(--main-green-color);
 }
 
+/* TITLE */
 .title {
     background-color: var(--main-black-color);
     display: flex;
@@ -52,13 +64,14 @@ body {
     width: 30vw; 
     padding: 1rem;
     overflow: hidden;
+	height: 100vh;
 }
 
 h1 {
     margin: 0;
     font-family: "BackOut";
-    font-size: calc(var(--root-size) * 2); 
-    line-height: 3rem;
+    font-size: calc(var(--root-size) * 3); 
+    line-height: 4rem;
     text-align: center; 
     word-spacing: 0.2rem; 
     letter-spacing: 0.1rem; 
@@ -68,8 +81,33 @@ h1 {
     width: 100%; 
     max-height: 100%; 
     display: block;
-	color: var(--main-white-color);
+	color: var(--main-pink-color);
 }
+
+h2{
+	text-align: center;
+	line-height: 1.5rem;
+	margin-top: 2rem;
+	color: var(--main-pink-color);
+}
+
+time, address {
+	padding: 0.8rem;
+	background-color: var(--main-pink-color);
+	border-radius: 30px;
+	font-family: "BackOut";
+    font-size: calc(var(--root-size) * 1.1); 
+	margin-bottom: 3rem;
+	text-transform: uppercase;
+	color: var(--main-black-color);
+}
+
+address{
+	margin-top: 3rem;
+}
+
+/* TEXT */
+
 
 summary {
 	font-family: "BackOut";
@@ -79,8 +117,10 @@ summary {
 	width: 70vw;
 	margin-left: 30vw;
     padding: 2rem;
-    background-color: var(--main-white-color);
+    background-color: var(--main-green-color);
     overflow-y: auto;
+	flex-grow: 1; 
+
 }
 
 details {
@@ -92,17 +132,21 @@ summary {
     background-color: var(--main-black-color);
     padding: 10px;
     font-size: 1.5rem;
-    /* border-radius: 5px; */
+    border-radius: 25px;
     transition: background-color 0.3s ease;
+	text-transform: uppercase;
+	padding-left: 1rem;
 }
 
 summary:hover {
-    background-color:#BA0021;
+    background-color:var(--main-pink-color);
+	color: var(--main-black-color);
+	border: 3px var(--main-black-color);
 }
 
 .section-content {
     margin-top: 1rem;
-    padding: 3rem;
+    padding: 10rem;
     background-color: transparent;
     border-left: 3px solid var(--main-black-color);
 }
@@ -110,8 +154,38 @@ summary:hover {
 article {
 	color: var(--main-black-color);
 	margin: 0.5rem;
+	/* width: 600px; */
+	margin-left: 8rem;
+	margin-top: 2rem;
+	margin-bottom: 8rem;
+
 }
 
 article p {
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+blockquote {
+	color: var(--main-black-color);
+
+
+}
+
+blockquote {
+	z-index: 10;
+	line-height: 3rem;
+	position: relative;
+	top: 25vh;
+	margin: 1rem;
+	text-align: right;
+	/* font-family: "BackOut"; */
+	font-size: calc(var(--root-size) * 1.8);
+	transition: filter 0.3s ease; 
+	margin-top: -3rem;
+	text-transform: uppercase;
+}
+
+blockquote:hover {
+	filter: blur(5px);
+	cursor: pointer;
 }
