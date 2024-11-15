@@ -475,7 +475,6 @@ h2 {
     left: 50%; 
     transform: translate(-50%, -50%); 
 	margin-left: 0.8rem;
-	
 }
 
 .intro-body {
@@ -487,8 +486,9 @@ h2 {
 }
 
 
-.intro-body p {
+p {
 	margin-bottom: 2rem;
+	line-height: 1.8rem;
 }
 
 mark {
@@ -502,7 +502,7 @@ mark {
 	width: 100%;
 	background: var(--main-text-color);
 	position: relative;
-	top: 40vh;
+	top: 20vh;
 }
 
 
@@ -519,15 +519,17 @@ mark {
 
 .section-title {
 	position: relative; 
-	max-width: 400px;
+	max-width: 350px;
 	width: 90vw; 
 	height: auto;
 	display: flex;
 	justify-content: center; 
+	margin-left: -1rem;
 }
 
+/* modernisms + ode*/
 .oval-container-2 {
-	width: 250px;
+	width: 300px;
 	height: 100px;
 	border-radius: 50px;
 	background-color: var(--magenta-color);
@@ -535,33 +537,59 @@ mark {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 45vh; 
-	transform: rotate(5deg);
+	top: 35vh; 
+	/* transform: rotate(5deg); */
 	z-index: 2;
+	left: 53%;
+	transform: translateX(-50%) rotate(-2deg);
+	margin-left: 0.5rem;
+	
 }
 
 .modernisms {
 	margin: 0;
 	color: var(--main-bg-color);
-	font-size: calc(var(--root-size) * 2.5);
+	font-size: calc(var(--root-size) * 2.2);
 	font-family: "Pinyon Script", cursive;
 	font-weight: 400;
 	font-style: normal;
 	top: 0;
 }
 
+/* to white supremacy */
+.rect-container{
+	background: var(--green-color);
+	height:80px;
+	width: 280px;
+	border-radius: 20px;
+	top: 48vh; 
+	position: relative;
+	z-index: 3;
+	transform: rotate(5deg);
+	left: 1rem;
+}
+
+.towhitesupremacy{
+	top: 25%;
+	color: var(--main-bg-color); 
+	font-size: calc(var(--root-size) * 1.2);
+	font-weight: 600;
+}
+
+
+/* ode */
 .star-container-2 {
 	position: absolute;
-	top: 55vh;
-	left: 35%;
+	top: 58vh;
+	left: 50%;
 	transform: translateX(-50%);
 	z-index: 5;
   }
   
   .star8-2 {
 	background: var(--green-color);
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	position: relative;
 	transform: rotate(-20deg); 
 	border-radius: 10px;
@@ -572,8 +600,8 @@ mark {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	background: var(--green-color);
 	transform: rotate(-45deg); 
 	border-radius: 10px;
@@ -586,9 +614,167 @@ mark {
 	left: 50%;
 	transform: translate(-50%, -50%); 
 	color:  var(--main-bg-color);
-	font-size: calc(var(--root-size) * 1.5);
+	font-size: calc(var(--root-size) * 1.8);
 	margin: 0; 
 	font-family: "Poppins", serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
   }
+
+  /* to */
+  .diamond-container-2 {
+	display: block;  
+	width: 60px;          
+	height: 60px;          
+	border-radius: 10px;     
+	background-color: var(--blue-color); 
+	display: flex;         
+	align-items: center;    
+	justify-content: center; 
+	position: absolute;
+	top: 57vh;
+	left: 60%;
+	z-index: 2;
+	transform: rotate(-45deg);
+  }
+  
+  .to{
+	margin: 0;             
+	color: var(--main-bg-color);
+	font-size: calc(var(--root-size) * 1.5);
+	transform: rotate(45deg);
+	font-family: "Poppins", serif;
+	font-weight: 600;
+	font-style: italic;
+	top: 0;
+  }
+
+  /* white */
+  .white {
+    font-family: "Major Mono Display", monospace;
+    font-size: calc(var(--root-size) * 2);
+    color: var(--main-bg-color);
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	margin-top: 1.2rem;
+	top: 0;
+}
+
+.folded-paper-container-3 {
+    background: var(--yellow-color);
+    position: absolute;
+    left: 55%;
+    top: 64vh;
+    display: block;
+    padding: 5px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: calc(var(--root-size) * 10);
+    height: calc(var(--root-size) * 4);
+    transform: translateX(-50%) rotate(-3deg); 
+    z-index: 1;
+}
+
+.folded-paper-container-3:before {
+    content: "";
+    position: absolute;
+    top: -1;
+    right: -1;
+    border-width: 0 30px 30px 0;
+    border-style: solid;
+    border-color: var(--magenta-color) var(--main-bg-color);
+    border-radius: 0 0 0 10px;
+}
+
+/* supremacy */
+.three-ellipses-container-4 {
+    position: absolute;
+	left: 55%;
+	transform: translateX(-50%);
+    margin-bottom: -7rem;
+	justify-content: center;
+    align-items: center;
+    z-index: 2;
+	max-width: 220px;
+	top: 72vh;
+	z-index: -1;
+}
+
+.ellipses-wrapper-4 {
+    position: relative;
+    width: 220px; 
+    height: 130px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transform: scale(0.9);
+}
+
+.ellipse-4 {
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    position: absolute;
+}
+
+.ellipse-4:nth-child(1) {
+    left: 0;
+}
+
+.ellipse-4:nth-child(2) {
+    left: 70px;
+}
+
+.ellipse-4:nth-child(3) {
+    left: 140px;
+}
+
+.supremacy {
+    font-family: "Maragsa", serif;
+    font-size: calc(var(--root-size) * 1.9);
+    color: var(--main-bg-color);
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+	margin-left: 0.8rem;
+}
+
+/* to white supremacy small*/
+h3 {
+	font-size: calc(var(--root-size) * 0.9);
+	margin: 0; 
+	text-align: center;
+	position: relative;
+	font-weight: 500;
+	top:60vh;
+	margin-left: 2rem;
+}
+
+.modernisms-body {
+	display: block;
+	position: relative;
+	top: 55vh;
+	font-weight: 300;
+	height: 100%;
+}
+
+#bold2 {
+	background-color: var(--blue-color);
+}
+
+#divider3{
+	height: 1px;
+	width: 100%;
+	background: var(--main-text-color);
+	position: relative;
+	top: 52vh;
+}
+
+/* FLAT DESIGN */
