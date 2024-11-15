@@ -774,7 +774,96 @@ h3 {
 	width: 100%;
 	background: var(--main-text-color);
 	position: relative;
-	top: 52vh;
+	top: 55vh;
 }
 
 /* FLAT DESIGN */
+.flat-section {
+	display: block;
+	position: relative;
+	top: 50rem;
+	margin: 1rem;
+	font-weight: 300;
+	/* height: auto; */
+}
+
+
+#section-title-2 {
+	position: relative; 
+	max-width: 350px;
+	width: 90vw; 
+	height: auto;
+	display: flex;
+	justify-content: center; 
+	margin-left: -1rem;
+	top: 30vh; 
+}
+
+/* flat design*/
+.rect-container-2{
+	background: var(--blue-color);
+	height:80px;
+	width: 200px;
+	border-radius: 20px;
+	top: 35vh; 
+	position: relative;
+	z-index: 1;
+	transform: rotate(5deg);
+	left: 1rem;
+}
+
+
+.flatdesign{
+	top: 25%;
+	color: var(--main-bg-color); 
+	font-size: calc(var(--root-size) * 1.2);
+	font-weight: 600;
+}
+
+
+
+/* a homogenous design ideal */
+.oval-container-3 {
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: var(--orange-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 45vh; 
+	/* transform: rotate(5deg); */
+	z-index: 2;
+	left: 48%;
+	transform: translateX(-50%) rotate(-2deg);
+	margin-left: 1.5rem;
+	
+}
+
+.homo {
+	margin: 0;
+	color: var(--main-bg-color);
+	font-size: calc(var(--root-size) * 1.5);
+	font-family: "Major Mono Display", monospace;
+	font-weight: bold;
+	top: 0;
+}
+
+.flatdesign-body {
+	display: block;
+	position: relative;
+	top: 83vh;
+	font-weight: 300;
+	height: 100%;
+}
+
+#divider4{
+	height: 1px;
+	width: 100%;
+	background: var(--main-text-color);
+	position: relative;
+	top: 82vh;
+}
+
+
