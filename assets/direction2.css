@@ -219,3 +219,145 @@ h2.intro-asterisk{
 p {
 	margin-bottom: 2rem;
 }
+
+/* MODERNISMS ODE */
+.modernism-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column; 
+}
+
+.section-title {
+    margin-top: 8rem;
+	display: flex;                
+    justify-content: center;      
+    align-items: center;  
+	flex-direction: column;
+	margin-bottom: 5rem;
+}
+
+.modernism-oval-container {
+    display: flex;                   
+    align-items: center;             
+    justify-content: center;         
+    width: 260px;                    
+    height: 100px;                   
+    border: 3px solid var(--main-text-color);
+    border-radius: 60% / 60%;       
+    background-color: var(--main-bg-color);
+    z-index: 2;
+	/* margin-left: 25%; */
+	position: relative;
+	transform: rotate(-5deg);
+}
+
+h2.modernismsode {
+    font-family: "Style Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(var(--root-size) * 2);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+h2.towhitesupremacy {
+	margin-top: -1.2rem;
+	font-family: var(--display-text-font);
+	font-weight: 400;
+	font-style: normal;
+	font-size: calc(var(--root-size) * 2);
+	text-align: center;
+	line-height: 2.3rem;
+}
+
+.modernisms-body {
+    margin: 1rem;
+}
+
+
+/* FLAT DESIGN */
+.flatdesign-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column; 
+	background-color: var(--main-text-color);
+	color: var(--main-bg-color);
+}
+
+
+.section-title {
+    margin-top: 8rem;
+	display: flex;                
+    justify-content: center;      
+    align-items: center;  
+	flex-direction: column;
+	margin-bottom: 5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+h2.flatdesign, h2.designideal {
+	margin-top: -1rem;
+	font-family: var(--display-text-font);
+	font-weight: 400;
+	font-style: normal;
+	font-size: calc(var(--root-size) * 2);
+	text-align: center;
+	line-height: 2.3rem;
+}
+
+.homo-oval-container {
+	margin-top: -0.3rem;
+    display: flex;                   
+    align-items: center;             
+    justify-content: center;         
+    width: 260px;                    
+    height: 100px;                   
+    border: 3px solid var(--main-bg-color);
+    border-radius: 60% / 60%;       
+    background-color: var(--main-text-color);
+    z-index: 2;
+	/* margin-left: 25%; */
+	position: relative;
+	transform: rotate(-5deg);
+}
+
+h2.homogenous {
+    font-family: "Style Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(var(--root-size) * 2);
+    text-align: center;
+}
+
+.flatdesign-body {
+    margin: 1rem;
+}
+
+/* CONCLUSION */
+.conclusion-section {
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+
+h2.conclusion-asterisk{
+    font-size: calc(var(--root-size) * 8);
+	text-align: center;
+	font-family: "Style Script", serif;
+    font-weight: 400;
+    font-style: normal;
+	margin-bottom: -2.5rem;
+	margin-top: 3rem;
+
+}
+
+.conclusion-body {
+	margin: 1rem;
+	margin-bottom: 10rem;
+}
+
+
+
+
