@@ -32,25 +32,6 @@ header {
   gap: 1rem;
 }
 
-/* Details */
-/* Subtitle */
-.subtitle {
-  grid-area: subtitle; 
-  border-bottom: var(--border-style);
-  height: 15vh;
-}
-
-/* Description */
-.description {
-  grid-area: description; 
-  border-bottom: var(--border-style);
-  height: 60vh;
-}
-
-/* Arrows */
-.arrows {
-  grid-area: arrows; /* Assigned to arrows area */
-}
 
 /* Title Styling */
 .shapes-container{
@@ -261,3 +242,75 @@ h1 {
 	border-radius: 10px 0 0 0px;
 	transform: rotate(-90deg);
 }
+
+/* Details */
+/* Subtitle */
+.subtitle {
+	grid-area: subtitle; 
+	border-bottom: var(--border-style);
+	height: 20vh;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+  }
+
+ h2 {
+	padding: 1rem;
+	font-size: calc(var(--root-size) * 2.5);
+	line-height: 3rem;
+	font-weight: 600;
+  }
+  
+  /* Description */
+  .description {
+	grid-area: description; 
+	border-bottom: var(--border-style);
+	height: 55vh;
+	position: relative; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+  }
+
+.description p {
+		background-color: var(--main-dark-color);
+		font-size: calc(var(--root-size) * 1);
+		text-align: center;
+		width: 110%; 
+		margin-left: -50%; 
+		font-weight: 300;
+		padding: 1rem;
+	  }
+  
+/* Arrows */
+.arrows {
+	grid-area: arrows;
+	height: 10vh; /* Adjust as needed */
+	overflow: hidden; /* Hide overflow to only show visible arrows */
+	position: relative; /* Ensures arrows scroll within this container */
+}
+
+.arrows .scrolling-arrows {
+	position: absolute; 
+	display: flex;
+	gap: 2rem; 
+	animation: scroll-arrows 30s linear infinite; 
+}
+
+.arrows span {
+	font-size: calc(var(--root-size) * 3); 
+	color: var(--main-white-color);
+	white-space: nowrap; 
+	cursor: pointer; 
+}
+
+/* Animation */
+@keyframes scroll-arrows {
+	0% {
+		transform: translateX(-50%); /* Start offscreen on the right */
+	}
+	100% {
+		transform: translateX(0%); /* Move completely offscreen to the left */
+	}
+}
+  
