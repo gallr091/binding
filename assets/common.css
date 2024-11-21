@@ -1,0 +1,28 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Xanh+Mono:ital@0;1&display=swap');
+
+@font-face {
+	font-family: "Maragsa";
+	src: url("/fonts/Maragsa-Display.otf") format("opentype");
+}
+
+:root {
+	--root-size: 1.2rem;
+	--main-dark-color: #0F1314;
+	--main-white-color: #edebeb;
+	--green-color: #62FF24; 
+	--magenta-color: #D15DDC;
+	--blue-color: #7CC6FF;
+	--yellow-color: #FFFB63;
+	--orange-color: #FC5A12;
+	--border-style: 1px solid var(--main-white-color);
+}
+
+body {
+	background-color: var(--main-dark-color);
+	color: var(--main-white-color); 
+	overflow-x: hidden;
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-style: normal;
+}
