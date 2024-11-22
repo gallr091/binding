@@ -307,7 +307,7 @@ h1 {
 		padding: 1rem;
 		margin-top: -1rem;
 	  }
-  
+
 /* Arrows */
 .arrows {
 	grid-area: arrows;
@@ -334,10 +334,10 @@ h1 {
 /* Animation */
 @keyframes scroll-arrows {
 	0% {
-		transform: translateX(-50%); /* Start offscreen on the right */
+		transform: translateX(-50%); 
 	}
 	100% {
-		transform: translateX(0%); /* Move completely offscreen to the left */
+		transform: translateX(0%); /
 	}
 }
   
