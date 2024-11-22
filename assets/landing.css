@@ -19,9 +19,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 2vw;
-  border-bottom: var(--border-style);
+  /* border-bottom: var(--border-style); */
   font-weight: 200;
 }
+
 
 /* Header */
 header {
@@ -257,13 +258,13 @@ h1 {
 .folded-paper-container-2:before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     border-width: 50px 50px 0 0;
     border-style: solid;
     border-color: var(--orange-color) var(--main-dark-color);
 	border-radius: 10px 0 0 0px;
-	transform: rotate(-90deg);
+	/* transform: rotate(-90deg); */
 }
 
 /* Details */
@@ -285,6 +286,7 @@ h1 {
   }
   
   /* Description */
+  
   .description {
 	grid-area: description; 
 	border-bottom: var(--border-style);
@@ -309,9 +311,9 @@ h1 {
 /* Arrows */
 .arrows {
 	grid-area: arrows;
-	height: 10vh; /* Adjust as needed */
-	overflow: hidden; /* Hide overflow to only show visible arrows */
-	position: relative; /* Ensures arrows scroll within this container */
+	height: 10vh; 
+	overflow: hidden; 
+	position: relative; 
 }
 
 .arrows .scrolling-arrows {
@@ -319,13 +321,14 @@ h1 {
 	display: flex;
 	gap: 2rem; 
 	animation: scroll-arrows 30s linear infinite; 
+	margin-top: -2rem;
 }
 
 .arrows span {
-	font-size: calc(var(--root-size) * 3); 
+	font-size: calc(var(--root-size) * 5); 
 	color: var(--main-white-color);
 	white-space: nowrap; 
-	cursor: pointer; 
+	cursor: pointer;
 }
 
 /* Animation */

@@ -15,7 +15,7 @@
 	--blue-color: #7CC6FF;
 	--yellow-color: #FFFB63;
 	--orange-color: #FC5A12;
-	--border-style: 4px dotted var(--main-white-color);
+	--border-style: 2px dotted var(--main-white-color);
 }
 
 body {
