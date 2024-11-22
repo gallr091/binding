@@ -121,7 +121,6 @@ header {
     "oval-container"
     "star-container"
     "folded-paper-container-2"; 
-
 }
 
 h1 {
@@ -383,6 +382,8 @@ h1 {
 	  z-index: 1;
 	  justify-self: center;
 	  bottom: 25rem;
+	  border-bottom: 3px solid var(--main-dark-color);
+	  border-left: 3px solid var(--main-dark-color);
   }
   
   .folded-paper-container-2:before {
