@@ -20,6 +20,7 @@ nav {
   align-items: center;
   padding: 0 2vw;
   border-bottom: var(--border-style);
+  font-weight: 200;
 }
 
 /* Header */
@@ -35,10 +36,13 @@ header {
 
 /* Title Styling */
 .shapes-container{
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
 	position: relative;
-	bottom: 10vh;
-	left: 2vw;
+	/* bottom: 10vh;
+	left: 20vw;
+	height: 300px;
+	width: 500px; */
+	height: 100%;
 }
 
 h1 {
@@ -48,26 +52,26 @@ h1 {
 /* Redesigning */
 #title-redesigning {
     font-family: "Major Mono Display", monospace;
-    font-size: calc(var(--root-size) * 3);
+    font-size: calc(var(--root-size) * 3.5);
+	text-transform: uppercase;
     font-weight: bold;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-	margin-top: 2rem;
-	text-transform: uppercase;
+	margin-top: 3rem;
 }
 
 .folded-paper-container {
     background: var(--magenta-color);
-    position: absolute;
-    left: 35%;
-    top: 15vh;
+    position: relative;
+    left: 40%;
+    top: 5vh;
     display: block;
     padding: 5px 15px;
     font-weight: bold;
     border-radius: 20px;
-    width: calc(var(--root-size) * 28);
-    height: calc(var(--root-size) * 7);
+    width: calc(var(--root-size) * 35);
+    height: calc(var(--root-size) * 10);
     transform: translateX(-50%) rotate(3deg); 
     z-index: 1;
 	border: 3px solid var(--main-dark-color);
@@ -78,7 +82,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    border-width: 45px 45px 0 0;
+    border-width: 50px 50px 0 0;
     border-style: solid;
     border-color: var(--yellow-color) var(--main-dark-color);
     border-radius: 10px 0 0 0px;
@@ -90,20 +94,20 @@ h1 {
 /* Design */
 #title-design {
     font-family: "Maragsa", serif; 
-    font-size: calc(var(--root-size) * 3.5);
+    font-size: calc(var(--root-size) * 4);
     text-align: center;
     position: absolute;
-	margin-top: 3rem;
-	margin-left: 3rem;
+	margin-top: 4rem;
+	margin-left: 5rem;
     /* transform: translateX(-50%); */
 	z-index: 4;
 }
 
 .three-ellipses-container {
     position: absolute;
-    left: 20%;
+    left: 25%;
     z-index: 2;
-	top: 30vh;
+	top: 25%;
 }
 
 .ellipses-wrapper {
@@ -113,8 +117,8 @@ h1 {
 }
 
 .ellipse {
-    width: 130px;
-    height: 160px;
+    width: 180px;
+    height: 210px;
     border-radius: 50%;
     background-color: #7CC6FF;
     position: absolute;
@@ -127,26 +131,26 @@ h1 {
 
 .ellipse:nth-child(2) {
     z-index: 2;
-    left: 80px;
+    left: 100px;
 }
 
 .ellipse:nth-child(3) {
     z-index: 3;
-    left: 150px;
+    left: 200px;
 }
 
 /* Decolonization */
 .oval-container {
 	display: block;  
-	width: 500px;          
-	height: 150px;          
+	width: 600px;          
+	height: 200px;          
 	border-radius: 100px;     
-	background-color: #FFFB63; 
+	background-color: var(--yellow-color); 
 	display: flex;         
 	align-items: center;    
 	justify-content: center; 
 	position: absolute;
-	top: 47vh;
+	top: 42vh;
 	left: 13%;
 	z-index: 1;
 	transform: rotate(-5deg);
@@ -154,7 +158,7 @@ h1 {
   
   #title-decolonization {
 	margin: 0;             
-	font-size: calc(var(--root-size) * 3.5);
+	font-size: calc(var(--root-size) * 5);
 	font-family: "Pinyon Script", cursive;
 	font-weight: 400;
 	font-style: normal;
@@ -164,16 +168,16 @@ h1 {
 /* As */
 .star-container {
 	position: absolute;
-	top: 65vh;
-	left: 22%;
+	top: 63vh;
+	left: 17%;
 	transform: translateX(-50%);
 	z-index: 5;
   }
   
   .star8 {
-	background: #FC5A12;
-	width: 80px;
-	height: 80px;
+	background:var(--orange-color);
+	width: 90px;
+	height: 90px;
 	position: relative;
 	transform: rotate(20deg); 
 	border-radius: 10px;
@@ -184,9 +188,9 @@ h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 80px;
-	height: 80px;
-	background: #FC5A12;
+	width: 90px;
+	height: 90px;
+	background: var(--orange-color);
 	transform: rotate(45deg); 
 	border-radius: 10px;
   }
@@ -211,22 +215,41 @@ h1 {
     font-size: calc(var(--root-size) * 4);
     text-align: center;
     position: absolute;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-	margin-top: 1.8rem;
+	margin-top: 3rem;
+}
+
+@keyframes textChange {
+	0% {
+		content: "Reckoning";
+	}
+	33% {
+		content: "Reclamation";
+	}
+	66% {
+		content: "Transformation";
+	}
+	100% {
+		content: "Reckoning"; /* Loop back */
+	}
+}
+
+#title-changingtext::after {
+	content: "Reckoning"; /* Initial text */
+	animation: textChange 9s linear infinite;
 }
 
 .folded-paper-container-2 {
     background: var(--green-color);
     position: absolute;
-    left: 45%;
+    left: 50%;
     top: 65vh;
     display: block;
     padding: 5px 15px;
     border-radius: 10px;
-    width: calc(var(--root-size) * 25);
-    height: calc(var(--root-size) * 7);
+    width: calc(var(--root-size) * 30);
+    height: calc(var(--root-size) * 9);
     transform: translateX(-50%) rotate(-2deg); 
     z-index: 1;
 }
@@ -236,7 +259,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    border-width: 45px 45px 0 0;
+    border-width: 50px 50px 0 0;
     border-style: solid;
     border-color: var(--orange-color) var(--main-dark-color);
 	border-radius: 10px 0 0 0px;
@@ -274,12 +297,13 @@ h1 {
 
 .description p {
 		background-color: var(--main-dark-color);
-		font-size: calc(var(--root-size) * 1);
+		font-size: calc(var(--root-size) * 0.9);
 		text-align: center;
 		width: 110%; 
 		margin-left: -50%; 
 		font-weight: 300;
 		padding: 1rem;
+		margin-top: -1rem;
 	  }
   
 /* Arrows */
