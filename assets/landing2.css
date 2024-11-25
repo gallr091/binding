@@ -38,7 +38,7 @@ html {
   /* ARROWS TOP LEFT*/
   .arrows {
     grid-area: arrows; 
-	border-bottom: var(--border-style);
+	  border-bottom: var(--border-style);
 	border-right: var(--border-style);
     display: flex; 
     align-items: center; 
@@ -146,6 +146,8 @@ header {
     "oval-container"
     "star-container"
     "folded-paper-container-2"; 
+margin-top: -5rem;
+transform: scale(0.85);
 }
 
 h1 {
@@ -505,12 +507,24 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "back-to-home back-to-home arrows1"
+    "back-to-home back-to-home arrows3"
     "article1-info article1-info article1-title"
     "article2-title article2-info article2-info"
     "article3-info article3-info article3-title"
-    "arrows2 arrows2 thanks-for-visiting";
+    "arrows4 arrows4 thanks-for-visiting";
 }
+
+.back-to-home { 
+  grid-area: back-to-home; 
+  border-bottom: var(--border-style);
+  border-right: var(--border-style);
+}
+
+.arrows3 { 
+  grid-area: arrows3; 
+  border-bottom: var(--border-style);
+}
+
 
 .article1-info {  
   display: grid;
@@ -605,7 +619,7 @@ footer {
 }
 
 .folded-paper-container-3 {
-  background: var(--magenta-color);
+  background: var(--yellow-color);
   display: block;
   position: relative;
   padding: 5px 15px;
@@ -614,7 +628,7 @@ footer {
   width: calc(var(--root-size) * 30);
   height: calc(var(--root-size) * 12);
   transform-origin: center;
-  transform: rotate(5deg); 
+  transform: rotate(3deg); 
   z-index: 1;
   border: 3px solid var(--main-dark-color);
   justify-self: center; 
@@ -627,7 +641,7 @@ footer {
   right: 0;
   border-width: 50px 50px 0 0;
   border-style: solid;
-  border-color: var(--yellow-color) var(--main-dark-color);
+  border-color: var(--magenta-color) var(--main-dark-color);
   border-radius: 10px 0 0 0px;
   z-index: -1; 
   transform: rotate(-90deg); /* top right corner */
@@ -724,23 +738,13 @@ footer {
   border: var(--border-style);
 }
 
-.back-to-home { 
-  grid-area: back-to-home; 
-  border: var(--border-style);
-}
-
-.arrows1 { 
-  grid-area: arrows1; 
-  border: var(--border-style);
-}
-
 .thanks-for-visiting { 
   grid-area: thanks-for-visiting; 
   border: var(--border-style);
 }
 
-.arrows2 { 
-  grid-area: arrows2; 
+.arrows4 { 
+  grid-area: arrows4; 
   border: var(--border-style);
 }
 
