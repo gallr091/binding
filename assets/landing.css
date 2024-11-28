@@ -934,8 +934,8 @@ footer {
   padding: 5px 15px;
   font-weight: bold;
   border-radius: 20px;
-  width: calc(var(--root-size) * 25);
-  height: calc(var(--root-size) * 18);
+  width: calc(var(--root-size) * 28);
+  height: calc(var(--root-size) * 15);
   transform-origin: center;
   transform: rotate(3deg); 
   z-index: 1;
