@@ -518,6 +518,7 @@ footer {
   grid-area: back-to-home; 
   border-bottom: var(--border-style);
   border-right: var(--border-style);
+  border-left: var(--border-style);
 }
 
 .arrows3 { 
@@ -536,12 +537,14 @@ footer {
     "article1-number"
     "article1-description";
   grid-area: article1-info;
-  border: var(--border-style);
+  /* border: var(--border-style); */
 }
 
 .article1-number {
    grid-area: article1-number; 
-   border: var(--border-style);
+   border-bottom: var(--border-style);
+   border-right: var(--border-style);
+   border-left: var(--border-style);
    justify-content: center; 
    display: flex;
 }
@@ -584,7 +587,9 @@ footer {
 
 .article1-description { 
   grid-area: article1-description; 
-  border: var(--border-style);
+  /* border: var(--border-style); */
+  border-left: var(--border-style);
+  border-right: var(--border-style);
 }
 
 .article1-description p {
@@ -600,13 +605,13 @@ footer {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-area: article1-title;
-  border: var(--border-style);
+  /* border: var(--border-style); */
 
 }
 
 .article1-stickynote { 
   grid-area: 1 / 1 / 3 / 2; 
-  border: var(--border-style);
+  /* border: var(--border-style); */
 }
 
 #title-designthinking {
@@ -632,6 +637,7 @@ footer {
   z-index: 1;
   border: 3px solid var(--main-dark-color);
   justify-self: center; 
+  /* margin-top: 1rem; */
 }
 
 .folded-paper-container-3:before {
@@ -649,7 +655,7 @@ footer {
 
 .article1-links {
   grid-area: 2 / 1 / 3 / 2; 
-  border: var(--border-style);
+  border-top: var(--border-style);
 }
 
 .article2-info {  
@@ -662,18 +668,19 @@ footer {
     "article2-number"
     "article2-description";
   grid-area: article2-info;
-  border: var(--border-style);
+  /* border: var(--border-style); */
 
 }
 
 .article2-number { 
   grid-area: article2-number; 
-  border: var(--border-style);
+  border-top: var(--border-style);
+
 }
 
 .article2-description { 
   grid-area: article2-description; 
-  border: var(--border-style);
+  border-top: var(--border-style);
 }
 
 .article2-title {  
@@ -686,7 +693,7 @@ footer {
     "article2-stickynote"
     "article2-links";
   grid-area: article2-title;
-  border: var(--border-style);
+  /* border: var(--border-style); */
 
 }
 
@@ -697,8 +704,10 @@ footer {
 
 .article2-links { 
   grid-area: article2-links;
-  border: var(--border-style);
+  border-left: var(--border-style);
+  border-right: var(--border-style);
  }
+
 
 .article3-info {  
   display: grid;
@@ -710,13 +719,15 @@ footer {
     "article3-number"
     ".";
   grid-area: article3-info;
-  border: var(--border-style);
+  border-left: var(--border-style);
+  /* border: var(--border-style); */
 
 }
 
 .article3-number { 
   grid-area: article3-number;
-  border: var(--border-style);
+  border-top: var(--border-style);
+  border-bottom: var(--border-style);
  }
 
 .article3-title { 
@@ -729,23 +740,26 @@ footer {
     "."
     "article3-links";
   grid-area: article3-title;
-  border: var(--border-style);
-
+  border-left: var(--border-style);
+  border-top: var(--border-style);
 }
 
 .article3-links { 
   grid-area: article3-links; 
-  border: var(--border-style);
+  border-top: var(--border-style);
 }
 
 .thanks-for-visiting { 
   grid-area: thanks-for-visiting; 
-  border: var(--border-style);
+  border-left: var(--border-style);
+  border-top: var(--border-style);
+
 }
 
 .arrows4 { 
   grid-area: arrows4; 
-  border: var(--border-style);
+  border-left: var(--border-style);
+  border-top: var(--border-style);
 }
 
 
