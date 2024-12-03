@@ -20,6 +20,11 @@ html {
     margin-bottom: 0;
 }
 
+p {
+  line-height: 1.5;
+  font-size: calc(var(--root-size) * 0.9);
+}
+
 /* --------- TITLE --------- */
 
 .slide.title {  
@@ -122,7 +127,7 @@ html {
 
  .description p {
 	margin: 1rem;
-	font-size: calc(var(--root-size) * 0.8);
+	font-size: calc(var(--root-size) * 0.85);
 	margin-right: 0.5rem;
   /* hyphens: manual; */
  }
@@ -441,7 +446,7 @@ h1 {
 
 .description2 p {
 	margin: 1rem;
-	font-size: calc(var(--root-size) * 0.8);
+	font-size: calc(var(--root-size) * 0.85);
 	margin-right: 0.5rem;
  }
 
@@ -790,7 +795,7 @@ footer {
   font-weight: bold;
   border-radius: 20px;
   width: calc(var(--root-size) *25);
-  height: calc(var(--root-size) * 15);
+  height: calc(var(--root-size) * 18);
   transform-origin: center;
   transform: rotate(-3deg); 
   z-index: 1;
