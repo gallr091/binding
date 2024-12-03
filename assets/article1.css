@@ -522,9 +522,9 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 3rem;
+	margin-top: 5.5rem;
 	position: sticky;
-	height: 20vh;
+	height: 14vh;
   }
   
   .back-to-top.intro sub {
@@ -535,7 +535,7 @@ header {
 	transform-origin: left bottom; 
 	line-height: 1rem; 
 	font-weight: 200;
-	margin-top: 2rem;
+	margin-top: -0.5rem;
   }
   
 
@@ -628,7 +628,7 @@ header {
 	width: 5vw;
 	margin-top: 5rem;
 	position: sticky;
-	height: 20vh;
+	height: 15vh;
   }
   
   .back-to-top.modernism sub {
@@ -786,9 +786,9 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 3rem;
+	margin-top: 5.5rem;
 	position: sticky;
-	height: 20vh;
+	height: 14vh;
   }
   
   .back-to-top.flatdesign sub {
@@ -799,7 +799,7 @@ header {
 	transform-origin: left bottom; 
 	line-height: 1rem; 
 	font-weight: 200;
-	margin-top: 2rem;
+	margin-top: -0.5rem;
   }
 
  /* Flat Design blockquote */
@@ -922,7 +922,7 @@ header {
 	width: 5vw;
 	margin-top: 5rem;
 	position: sticky;
-	height: 20vh;
+	height: 15vh;
   }
   
   .back-to-top.conclusion sub {
@@ -1118,4 +1118,8 @@ footer address {
 footer sub {
     margin: 0;
     cursor: pointer; 
+}
+
+sub:hover{
+	opacity: 50%;
 }
