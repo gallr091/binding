@@ -641,5 +641,54 @@ header {
 	font-weight: 200;
 	margin-top: 5rem;
   }
+
+/* Modernism blockquote */
+.modernism-blockquote{
+	height: auto;
+	margin-left: auto;
+	width: 95vw;
+	border-left: var(--border-style);
+}
+
+.quote.modernism {
+	font-weight: bold;
+	position: absolute;
+	color: var(--main-dark-color);
+	font-size: calc(var(--root-size)*1.5);
+	line-height: 1.1;
+	margin: 0.5rem;
+	padding-top: 1.5rem;
+  }
+  
+  .folded-paper-container-3 {
+	background: var(--yellow-color);
+	display: block;
+	position: relative;
+	padding: 5px 15px;
+	font-weight: bold;
+	border-radius: 20px;
+	width: 350px;
+	height: 350px;
+	transform-origin: center;
+	transform: rotate(3deg); 
+	z-index: 1;
+	border: 3px solid var(--main-dark-color);
+	justify-self: center; 
+	/* margin-top: 1rem; */
+	margin-right: 1rem;
+  }
+  
+  .folded-paper-container-3:before {
+	content: "";
+	position: absolute;
+	top: -1;
+	right: -1;
+	border-width: 50px 50px 0 0;
+	border-style: solid;
+	border-color: var(--magenta-color) var(--main-dark-color);
+	border-radius: 10px 0 0 0px;
+	z-index: -1; 
+	transform: rotate(-90deg); 
+  }
   
   
