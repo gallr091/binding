@@ -1005,7 +1005,7 @@ header {
 	border: 3px solid var(--main-dark-color);
 	justify-self: center; 
 	/* margin-top: 1rem; */
-	margin-right: 1rem;
+	/* margin-right: 1rem; */
   }
   
   .folded-paper-container-5:before {
