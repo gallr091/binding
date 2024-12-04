@@ -732,11 +732,6 @@ header {
     left: 180px;
 }
 
-.end {
-	border-bottom: var(--border-style);
-	padding: 1rem;
-  }
-
    details p:first-of-type {
 	padding-top: 1rem;
   }

@@ -119,6 +119,12 @@ details[open] > p {
 	cursor: pointer;
   }
 
+  .end {
+	border-bottom: var(--border-style);
+	padding: 1rem;
+  }
+
+
 
   
   

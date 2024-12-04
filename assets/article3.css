@@ -801,6 +801,7 @@ header {
 	height: auto;
 	width: 95vw;
 	border-right: var(--border-style);
+	padding-bottom: 10rem;
 }
 
   .folded-paper-container-4 {
@@ -834,5 +835,57 @@ header {
 	z-index: -1; 
 	transform: rotate(360deg); 
   }
+
+
+/* ARTICLE INFORMATION */
+.links-section{
+	height: auto;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.oval-container-5 {
+	display: block;  
+	width: 300px;          
+	height: 150px;          
+	border-radius: 100px;     
+	background-color: var(--magenta-color); 
+	display: flex;         
+	align-items: center;    
+	justify-content: center; 
+	position: relative;
+	z-index: 2;
+	margin-top: -0.5rem;
+	transform: rotate(-3deg);
+  }
   
-  
+  .line-links {
+	margin: 0;             
+	color: var(--main-dark-color);
+	font-size: calc(var(--root-size) * 2.5);
+	font-family: "Pinyon Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	padding-top: 0.5rem;
+	text-align: center;
+	line-height: 0.8;
+  }
+
+  /* DETAILS */
+  details p:first-of-type {
+	padding-top: 1rem;
+  }
+
+  .highlight-link {
+	background-color: var(--orange-color);
+	color: var(--main-dark-color);
+	font-weight: 500;
+	transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .highlight-link:hover{
+	cursor: pointer;
+	background-color: var(--green-color);
+  }
+
