@@ -1072,7 +1072,7 @@ details[open] > p {
 .links-section {
     display: flex;
     justify-content: center;
-    align-items: center; /
+    align-items: center; 
 }
 
 .star-container-2 {
@@ -1127,9 +1127,9 @@ details[open] > p {
 	margin-top: 1.5rem;
 }
 
-.star-container-2.star8:hover {
+/* .star-container-2.star8:hover {
     background: var(--green-color); 
-}
+} */
 
 
 /* FOOTER */
