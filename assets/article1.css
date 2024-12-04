@@ -1026,36 +1026,6 @@ header {
 	padding: 1rem;
   }
 
-  details > summary {
-    list-style-type: none; /* Remove the default bullet/marker */
-    margin-left: 1rem;
-    position: relative;
-    cursor: pointer;
-}
-
-details > summary::before {
-    content: '→'; 
-    position: absolute;
-    left: -1.5rem; 
-    transition: transform 0.3s ease; 
-    transform-origin: center;
-}
-
-details[open] > summary::before {
-    transform: rotate(90deg); 
-}
-
-details[open] > p {
-    margin-top: 1rem;
-}
-  summary {
-	font-weight: 500;
-  }
-
-  summary:hover{
-	cursor: pointer;
-  }
-
   .highlight-link {
 	background-color: var(--yellow-color);
 	color: var(--main-dark-color);

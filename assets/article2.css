@@ -737,38 +737,8 @@ header {
 	padding: 1rem;
   }
 
-  details p:first-of-type {
+   p:first-of-type {
 	padding-top: 0rem;
-  }
-
-  details > summary {
-    list-style-type: none; 
-    margin-left: 1rem;
-    position: relative;
-    cursor: pointer;
-}
-
-details > summary::before {
-    content: '→'; 
-    position: absolute;
-    left: -1.5rem; 
-    transition: transform 0.3s ease; 
-    transform-origin: center;
-}
-
-details[open] > summary::before {
-    transform: rotate(90deg); 
-}
-
-details[open] > p {
-    margin-top: 1rem;
-}
-  summary {
-	font-weight: 500;
-  }
-
-  summary:hover{
-	cursor: pointer;
   }
 
 
