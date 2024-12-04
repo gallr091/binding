@@ -737,8 +737,8 @@ header {
 	padding: 1rem;
   }
 
-   p:first-of-type {
-	padding-top: 0rem;
+   details p:first-of-type {
+	padding-top: 1rem;
   }
 
 
