@@ -889,3 +889,87 @@ header {
 	background-color: var(--green-color);
   }
 
+/* LINK TO OG */
+.three-ellipses-container-3 {
+	position: relative;
+	z-index: 2; 
+	height: 90px;
+	width: 180px;
+	transition: transform 0.3s ease;
+	margin-top: -0.5rem;
+}
+
+.three-ellipses-container-3:hover {
+	transform: scale(1.2) rotate(-45deg); 
+	cursor: pointer;
+}
+
+  .ellipses-wrapper-3{
+	display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+  
+  .ellipse-3 {
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--green-color);  
+    position: absolute;
+}
+
+.ellipse-3:nth-child(1) {
+    z-index: 1;
+    left: 0;
+}
+
+.ellipse-3:nth-child(2) {
+    z-index: 2;
+    left: 50px;
+}
+
+.ellipse-3:nth-child(3) {
+    z-index: 3;
+    left: 100px;
+}
+
+.line-og{
+	color: var(--main-dark-color);  
+	font-size: calc(var(--root-size) * 1.4);
+	font-family: "Pinyon Script", cursive;
+	font-weight: 400;
+	margin-right: 1rem;
+	text-align: center;
+	padding-left: 1rem;
+	line-height: 1;
+	padding-bottom: 0.5rem;
+	position: absolute;
+	z-index: 5;
+	padding-top: 1.5rem;
+  }
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem; 
+	border-top: var(--border-style);
+	font-size: calc(var(--root-size) * 0.5);
+}
+
+footer address {
+    font-style: normal; 
+    margin: 0;
+}
+
+footer sub {
+    margin: 0;
+    cursor: pointer; 
+}
+
+sub:hover{
+	opacity: 50%;
+}
+
+  
