@@ -6,7 +6,8 @@ body{
 header {
 	position: relative;
 	max-width: 400px;
-	height: 60vh;
+	height: 55vh;
+	/* old: 60vh */
 	display: flex;
 	margin: 0;
 }
@@ -169,13 +170,13 @@ header {
 /* SUBTITLE */
 .subtitle {
 	position: relative;
-	display: flex;
+	/* display: flex; */
 	text-align: center;
 	/* margin-top: -5rem; */
 	width: 100%;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
-	padding-left: 0.5rem;
+	/* padding-left: 0.5rem; */
 	border-bottom: var(--border-style);
 	border-top: var(--border-style);
 	font-weight: 600;
