@@ -1077,6 +1077,10 @@ main{
 	max-height: 95%;
 }
 
+.subtitle {
+	padding-left: 0;
+}
+
 .details {
 	border-bottom: none; 
 }
@@ -1119,8 +1123,6 @@ p {
 	padding-bottom: 10rem;
 	margin-top: -10rem;
 }
-
-
 
 .quote.modernism {
 	margin: 0.5rem;
@@ -1166,9 +1168,8 @@ details{
 
 .back-to-top.intro, .back-to-top.flatdesign, .back-to-top.modernism, .back-to-top.conclusion {
 	justify-content: center;
-	margin-left: calc(var(--root-size) * 2);
+	margin-left: calc(var(--root-size) * 2.25);
 }
-
 
 }
 
