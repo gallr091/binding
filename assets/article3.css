@@ -971,4 +971,112 @@ sub:hover{
 	opacity: 50%;
 }
 
-  
+/* DESKTOP VIEW */
+@media (min-width:650px) {
+	.all{
+		display: flex;
+		flex-direction: row;
+		box-sizing: border-box;
+	}
+	
+	main{
+		width: 30vw;
+		border-right: var(--border-style);
+		max-height: 95%;
+	}
+	
+	.subtitle {
+		padding-left: 0;
+	}
+	
+	.details {
+		border-bottom: none; 
+	}
+	
+	.alltext{
+		max-height: 95vh;
+		overflow-y: scroll;
+		width: 80vw;
+		padding: 0;
+		margin: 0;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+	
+	p {
+		margin-left: 3rem;
+		margin-right: 5rem;
+	}
+	
+	.arrows.one, .arrows.two {
+		width: 95%;
+		padding-top: 0;
+	}
+	.text.theory, .text.inspiration, .text.challenges {
+		width: 95%;
+		padding-bottom: 10rem;
+	}
+	
+	.folded-paper-container-3 {
+		width: 350px;
+		height: 100px;
+		margin-right: auto;
+		padding-bottom: 10rem;
+		margin-top: -8rem;
+	}
+	
+	.folded-paper-container-4{
+		width: 350px;
+		height: 200px;
+		margin-left: auto;
+		padding-bottom: 10rem;
+		margin-top: -12rem;
+		transform: rotate(10deg);
+	}
+	
+	.oval-container-3 {
+		margin-left: auto;
+
+	}
+	
+	.inspiration-blockquote, .challenges-blockquote {
+		padding-bottom: 10rem;
+	  }
+	
+	.inspiration-blockquote, .challenges-blockquote, .links-section{
+		width: 95%;
+	}
+	
+	.scrolling-arrows {
+		animation: scroll-arrows 10s linear infinite; 
+	}
+	
+	.scrolling-arrows-2{
+		animation: scroll-arrows-2 10s linear infinite; 
+	}
+	
+	.arrows.intro, .arrows.modernism, .arrows.flatdesign, .arrows.conclusion {
+		padding-top: 0;
+	}
+	
+	
+	details{
+		margin-left: 1.5rem;
+	}
+	
+	/* .back-to-top sub {
+		padding-bottom: 1rem;
+	}
+	
+	.back-to-top {
+		justify-content: center;
+	} */
+	
+	.back-to-top.one, .back-to-top.two{
+		justify-content: center;
+		margin-left: calc(var(--root-size) * 2.25);
+	}
+	
+	}
+	
+	
