@@ -9,7 +9,7 @@ header {
 	/* max-height: 70%; */
 	/* left: calc(var(--root-size) * 1.2); */
 	/* transform: scale(0.95); */
-	height: 90vh;
+	height: 650px;
 	display: flex;
 	margin: 0;
 	/* border-right: var(--border-style);  */
@@ -366,13 +366,13 @@ header {
 /* SUBTITLE */
 .subtitle {
 	position: relative;
-	display: flex;
+	/* display: flex; */
 	text-align: center;
 	margin-top: -5rem;
 	width: 100%;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
-	padding-left: 0.5rem;
+	/* padding-left: 0.5rem; */
 	border-bottom: var(--border-style);
 	border-top: var(--border-style);
 	font-weight: 600;
@@ -1064,13 +1064,6 @@ sub:hover{
 		margin-left: 1.5rem;
 	}
 	
-	/* .back-to-top sub {
-		padding-bottom: 1rem;
-	}
-	
-	.back-to-top {
-		justify-content: center;
-	} */
 	
 	.back-to-top.one, .back-to-top.two{
 		justify-content: center;
