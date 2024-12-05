@@ -2,18 +2,17 @@ body{
 	overflow-x: hidden;
 }
 
+nav{ 
+}
+
 /* TITLE */
+
 header {
 	position: relative;
 	max-width: 400px;
-	/* max-height: 70%; */
-	/* left: calc(var(--root-size) * 1.2); */
-	/* transform: scale(0.9); */
 	height: 90vh;
 	display: flex;
 	margin: 0;
-	/* border-right: var(--border-style);  */
-	/* for desktop ^ */
 }
 
 #title-wrapper {
@@ -364,8 +363,10 @@ header {
 	border-bottom: var(--border-style);
 }
 
-/* INTRODUCTION */
 
+
+
+/* INTRODUCTION */
 /* arrows */
 .arrows.intro {
 	width: 95vw;
@@ -1063,3 +1064,51 @@ footer sub {
 sub:hover{
 	opacity: 50%;
 }
+
+
+/* DESKTOP VIEW */
+@media (min-width:650px) {
+.all{
+	display: flex;
+	flex-direction: row;
+    box-sizing: border-box;
+	
+}
+
+main{
+	width: 30vw;
+	border-right: var(--border-style);
+	max-height: 100%;
+}
+
+.details {
+	border-bottom: none; 
+}
+
+.alltext{
+	max-height: 100vh;
+	overflow-y: scroll;
+	width: 80vw;
+	padding: 0;
+    margin: 0;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+p {
+	margin-left: 3rem;
+	margin-right: 5rem;
+}
+
+.arrows.intro, .arrows.modernism, .arrows.flatdesign, .arrows.conclusion {
+	width: 95%;
+}
+.text.intro, .text.modernism, .text.flatdesign, .text.conclusion {
+	width: 95%;
+}
+
+.flatdesign-blockquote, .modernism-blockquote, .links-section{
+width: 95%;
+}
+}
+

@@ -124,6 +124,10 @@ details[open] > p {
 	padding: 1rem;
   }
 
+  details p:first-of-type {
+	padding-top: 1rem;
+  }
+
 
 
   

@@ -8,7 +8,7 @@ header {
 	max-width: 400px;
 	/* max-height: 70%; */
 	/* left: calc(var(--root-size) * 1.2); */
-	/* transform: scale(0.9); */
+	/* transform: scale(0.95); */
 	height: 90vh;
 	display: flex;
 	margin: 0;
@@ -20,7 +20,6 @@ header {
 	display: flex;
 	height: 75vh;
 	width: 100%;
-	/* transform: scale(0.95); */
 	justify-content: center;
 }
 
@@ -900,7 +899,7 @@ header {
 }
 
 .three-ellipses-container-3:hover {
-	transform: scale(1.2) rotate(-45deg); 
+	transform: scale(1.2); 
 	cursor: pointer;
 }
 
