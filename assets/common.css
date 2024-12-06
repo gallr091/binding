@@ -26,7 +26,17 @@ body {
 	font-weight: 300;
 	font-style: normal;
 	scroll-behavior: smooth;
+	animation: fade 1.0s ease-out forwards;
 }
+
+@keyframes fade {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 html {
 	scroll-behavior: smooth;
