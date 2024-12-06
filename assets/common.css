@@ -138,9 +138,21 @@ details[open] > p {
 	padding-top: 1rem;
   }
 
-  /* BOLD */
+  /* TEXT LINKS AND BOLS */
   .word-emphasis {
 	font-weight: 700;
+  }
+
+  .text-link{
+	text-decoration: underline dotted;
+  }
+
+  .text-link:hover{
+	opacity: 50%;
+  }
+
+  .italic {
+	font-style: italic;
   }
 
 
