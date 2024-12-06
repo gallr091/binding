@@ -25,6 +25,11 @@ body {
 	font-family: "Space Grotesk", serif;
 	font-weight: 300;
 	font-style: normal;
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 /* NAVIGATION */

@@ -730,8 +730,13 @@ nav {
 
 @media (min-width: 650px){
 
+body {
+  scroll-behavior: smooth;
+}
+
 .mobile-wrapper {
   display: none;
+  scroll-behavior: smooth;
 }
   
 html {
