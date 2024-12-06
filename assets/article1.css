@@ -1296,7 +1296,7 @@ footer .mobile {
 		position: relative;
 		max-width: 400px;
 		/* height: 90vh; */
-		height: 650px;
+		height: 600px;
 		display: flex;
 		margin: 0;
 	}
@@ -1311,7 +1311,7 @@ footer .mobile {
 	
 	.folded-paper-container{
 		position: relative;
-		margin-left: 2rem;
+		margin-right: 3rem;
 	}
 
 	main{
