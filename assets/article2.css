@@ -13,7 +13,7 @@ nav ul li:nth-child(3) {
 header {
 	position: relative;
 	max-width: 400px;
-	height: 55vh;
+	height: 65vh;
 	/* old: 60vh */
 	display: flex;
 	margin: 0;
