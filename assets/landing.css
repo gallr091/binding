@@ -99,7 +99,7 @@ nav {
     align-items: center; 
     width: 100%; 
     height: 100%; 
-	margin-top: -1rem;
+	  margin-top: -1rem;
 }
 
 .ellipses-wrapper {
@@ -1384,6 +1384,9 @@ footer p {
 	height: 90px;
 	position: relative;
 	border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
   .desktop-star:before {
@@ -1398,11 +1401,10 @@ footer p {
 	border-radius: 10px;
   }
 
-  .number-title {
-    font-family: "Maragsa", serif;
-    font-size: calc(var(--root-size) * 4);
+  .number-title.one {
+    font-family: "Major Mono Display", monospace;
+    font-size: calc(var(--root-size) * 3);
     text-align: center;
-    margin-left: 1rem;
     position: absolute;
     color: var(--main-dark-color);
   }
@@ -1672,7 +1674,9 @@ footer p {
   align-items: center; 
   width: 100%; 
   height: 100%; 
-  /* bottom: 8rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ellipses-wrapper-2 {
@@ -1685,6 +1689,14 @@ footer p {
   transform-origin: center;
   transform: rotate(90deg);
   margin-top: -1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-title.three{
+  margin-top: 1.5rem;
+  margin-left: 1rem;
 }
 
 .ellipse-2 {
