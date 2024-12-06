@@ -727,8 +727,9 @@ nav {
   }
   
 
+/* ========= DESKTOP ========= */
 
-@media (min-width: 650px){
+@media (min-width: 800px){
 
 body {
   scroll-behavior: smooth;
@@ -814,7 +815,6 @@ p {
 		transform: translateX(0%); 
 	}
 }
-
 
   /* EMPTY TOP */
   .empty { 
@@ -904,7 +904,9 @@ p {
 
  .desktop-description p {
 	margin: 1rem;
-	font-size: calc(var(--root-size) * 0.85);
+  /* original
+	font-size: calc(var(--root-size) * 0.85); */
+  font-size: calc(var(--root-size) * 0.6);
 	margin-right: 0.5rem;
   /* hyphens: manual; */
   padding: 0;
@@ -1221,7 +1223,7 @@ h1 {
 
 .description2 p {
 	margin: 1rem;
-	font-size: calc(var(--root-size) * 0.85);
+	font-size: calc(var(--root-size) * 0.6);
 	margin-right: 0.5rem;
   padding: 0;
  }
@@ -1416,9 +1418,6 @@ footer p {
 
 .desktop-article1-description { 
   grid-area: article1-description; 
-  /* border: var(--border-style); */
-  /* border-left: var(--border-style);
-  border-right: var(--border-style); */
 }
 
 .desktop-article-descriptions {
@@ -1439,20 +1438,17 @@ footer p {
   grid-area: 
   "article1-stickynote"
   "article1-links";
-  /* border: var(--border-style); */
-
 }
 
 .desktop-article1-stickynote { 
   grid-area: 1 / 1 / 3 / 2; 
-  /* border: var(--border-style); */
 }
 
 #title-designthinking {
   font-weight: bold;
   position: absolute;
   color: var(--main-dark-color);
-  font-size: calc(var(--root-size)*2.5);
+  font-size: calc(var(--root-size)*2);
   line-height: 1.1;
   margin: 2rem;
 }
@@ -1464,8 +1460,8 @@ footer p {
   padding: 5px 15px;
   font-weight: bold;
   border-radius: 20px;
-  width: calc(var(--root-size) * 25);
-  height: calc(var(--root-size) * 15);
+  width: calc(var(--root-size) * 15);
+  height: calc(var(--root-size) * 16);
   transform-origin: center;
   transform: rotate(3deg); 
   z-index: 1;
@@ -1489,7 +1485,7 @@ footer p {
   border-color: var(--magenta-color) var(--main-dark-color);
   border-radius: 10px 0 0 0px;
   z-index: -1; 
-  transform: rotate(-90deg); /* top right corner */
+  transform: rotate(-90deg); 
 }
 
 .desktop-article1-links {
@@ -1565,9 +1561,10 @@ footer p {
     "article2-stickynote"
     "article2-links";
   grid-area: article2-title;
-  border-right: var(--border-style);
   border-top: var(--border-style);
   border-bottom: var(--border-style);
+  border-right: var(--border-style);
+
 }
 
 .desktop-article2-stickynote { 
@@ -1579,7 +1576,7 @@ footer p {
   font-weight: bold;
   position: absolute;
   color: var(--main-dark-color);
-  font-size: calc(var(--root-size)*2.5);
+  font-size: calc(var(--root-size)*2);
   line-height: 1.1;
   margin: 2rem;
 }
@@ -1591,8 +1588,8 @@ footer p {
   padding: 5px 15px;
   font-weight: bold;
   border-radius: 20px;
-  width: calc(var(--root-size) *25);
-  height: calc(var(--root-size) * 18);
+  width: calc(var(--root-size) *16);
+  height: calc(var(--root-size) * 20);
   transform-origin: center;
   transform: rotate(-3deg); 
   z-index: 1;
@@ -1746,7 +1743,7 @@ footer p {
   font-weight: bold;
   position: absolute;
   color: var(--main-dark-color);
-  font-size: calc(var(--root-size)*2.5);
+  font-size: calc(var(--root-size)*2);
   line-height: 1.1;
   margin: 2rem;
   padding: 0;
@@ -1760,8 +1757,8 @@ footer p {
   padding: 5px 15px;
   font-weight: bold;
   border-radius: 20px;
-  width: calc(var(--root-size) * 25);
-  height: calc(var(--root-size) * 18);
+  width: calc(var(--root-size) * 17);
+  height: calc(var(--root-size) * 16);
   transform-origin: center;
   transform: rotate(3deg); 
   z-index: 1;
@@ -1837,4 +1834,46 @@ footer p {
   font-size: calc(var(--root-size) * 5); 
   animation: scroll-arrows-3 15s linear infinite; 
 }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .desktop-description p {
+    margin: 1rem;
+    font-size: calc(var(--root-size) * 0.85); 
+  }
+
+  .description2 p {
+    margin: 1rem;
+    font-size: calc(var(--root-size) * 0.85);
+  }
+
+  .desktop-folded-paper-container-3 {
+    width: calc(var(--root-size) * 25);
+    height: calc(var(--root-size) * 15);
+  }
+
+  #title-designthinking {
+    font-size: calc(var(--root-size)*2.5);
+  }
+
+  #title-helvetica {
+    font-size: calc(var(--root-size)*2.5);
+  }
+  
+  .desktop-folded-paper-container-4 {
+    width: calc(var(--root-size) *25);
+    height: calc(var(--root-size) * 18);
+  }
+
+  #title-queer {
+    font-size: calc(var(--root-size)*2.5);
+  }
+  
+  .desktop-folded-paper-container-5 {
+    width: calc(var(--root-size) * 25);
+    height: calc(var(--root-size) * 18);
+  }
 }
