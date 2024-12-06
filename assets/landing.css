@@ -83,7 +83,7 @@ nav {
     border-color: var(--yellow-color) var(--main-dark-color);
     border-radius: 10px 0 0 0px;
     z-index: -1; 
-    transform: rotate(-90deg); /* top right corner */
+    transform: rotate(-90deg); 
 }
 
 /* Design */
@@ -955,7 +955,7 @@ p {
 	margin: 1rem;
   /* original
 	font-size: calc(var(--root-size) * 0.85); */
-  font-size: calc(var(--root-size) * 0.6);
+  font-size: calc(var(--root-size) * 0.55);
 	margin-right: 0.5rem;
   /* hyphens: manual; */
   padding: 0;
@@ -980,8 +980,8 @@ p {
     "oval-container"
     "star-container"
     "folded-paper-container-2"; 
-margin-top: -5rem;
-transform: scale(0.85);
+margin-top: -8rem;
+transform: scale(0.7);
 }
 
 h1 {
@@ -1272,7 +1272,7 @@ h1 {
 
 .description2 p {
 	margin: 1rem;
-	font-size: calc(var(--root-size) * 0.6);
+	font-size: calc(var(--root-size) * 0.55);
 	margin-right: 0.5rem;
   padding: 0;
  }
@@ -1883,20 +1883,18 @@ footer p {
   font-size: calc(var(--root-size) * 5); 
   animation: scroll-arrows-3 15s linear infinite; 
 }
-
 }
-
 
 @media (min-width: 1024px) {
 
   .desktop-description p {
     margin: 1rem;
-    font-size: calc(var(--root-size) * 0.85); 
+    font-size: calc(var(--root-size) * 0.65); 
   }
 
   .description2 p {
     margin: 1rem;
-    font-size: calc(var(--root-size) * 0.85);
+    font-size: calc(var(--root-size) * 0.65);
   }
 
   .desktop-folded-paper-container-3 {
@@ -1924,5 +1922,40 @@ footer p {
   .desktop-folded-paper-container-5 {
     width: calc(var(--root-size) * 25);
     height: calc(var(--root-size) * 18);
+  }
+
+  
+}
+
+@media (min-width: 1440px) {
+
+
+.desktop-shapes-container {
+  justify-self: center;
+  align-self: center;
+  display: grid; 
+  justify-items: center;
+    grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "folded-paper-container"
+    "three-ellipses-container"
+    "oval-container"
+    "star-container"
+    "folded-paper-container-2"; 
+margin-top: -5rem;
+transform: scale(0.85);
+}
+
+
+  .desktop-description p {
+    margin: 1rem;
+    font-size: calc(var(--root-size) * 0.8); 
+  }
+
+  .description2 p {
+    margin: 1rem;
+    font-size: calc(var(--root-size) * 0.8);
   }
 }
