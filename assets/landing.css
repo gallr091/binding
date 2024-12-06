@@ -35,6 +35,10 @@ nav {
 	text-decoration: none;
 	font-size: calc(var(--root-size) * 0.5); 
   }
+
+  nav a:hover{
+    opacity: 50%;
+  }
   
   /* TITLE */
   header{
@@ -436,7 +440,17 @@ nav {
 	align-items: center;
 	justify-content: center;
 	border-left: var(--border-style);
-  }
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out, font-weight .3s ease-in-out;
+  box-shadow: inset 0 0 0 0 var(--magenta-color);
+}
+
+.article1-links:hover{
+  cursor: pointer;
+  box-shadow: inset 700px 0 0 0 var(--magenta-color);
+  color: var(--main-dark-color);
+  font-weight: 700;
+}
+  
 
   .article1-links p {
 	font-size: calc(var(--root-size)* 1.5);
@@ -570,7 +584,17 @@ nav {
 	align-items: center;
 	justify-content: center;
 	border-right: var(--border-style);
-  }
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out, font-weight .3s ease-in-out;
+  box-shadow: inset 0 0 0 0 var(--orange-color);
+}
+
+.article2-links:hover{
+  cursor: pointer;
+  box-shadow: inset 700px 0 0 0 var(--orange-color);
+  color: var(--main-dark-color);
+  font-weight: 700;
+}
+  
 
   .article2-links p {
 	font-size: calc(var(--root-size)* 1.5);
@@ -598,7 +622,7 @@ nav {
 	padding-right: 0.5rem;
  }
   
-   .three-ellipses-container-2{
+  .three-ellipses-container-2{
 	position: relative;
 	z-index: 2;
 	display: flex;
@@ -691,6 +715,31 @@ nav {
 	z-index: -1; 
 	transform: rotate(-90deg); /* top right corner */
   }
+
+  .article3-links {
+    width: 95vw;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: var(--border-style);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out, font-weight .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 var(--green-color);
+  }
+  
+  .article3-links:hover{
+    cursor: pointer;
+    box-shadow: inset 700px 0 0 0 var(--green-color);
+    color: var(--main-dark-color);
+    font-weight: 700;
+  }
+    
+    .article3-links p {
+      font-size: calc(var(--root-size)* 1.5);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      }
+  
 
   p.article-descriptions.last{
 	margin-bottom: 5rem;
