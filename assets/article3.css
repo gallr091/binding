@@ -507,7 +507,7 @@ header {
 	height: 14vh;
   }
   
-  .back-to-top.one sub {
+  .back-to-top.one .mobile {
 	position: absolute;
 	font-size: calc(var(--root-size) * 0.5);
 	white-space: nowrap; 
@@ -516,6 +516,10 @@ header {
 	line-height: 1rem; 
 	font-weight: 200;
 	margin-top: -0.5rem;
+  }
+
+  .back-to-top.one .desktop-btt{
+	display: none;
   }
 
 
@@ -644,7 +648,7 @@ header {
 	height: 15vh;
   }
   
-  .back-to-top.two sub {
+  .back-to-top.two .mobile {
 	position: absolute;
 	font-size: calc(var(--root-size) * 0.5);
 	white-space: nowrap; 
@@ -654,6 +658,11 @@ header {
 	font-weight: 200;
 	margin-top: 5rem;
   }
+
+  .back-to-top.two .desktop-btt{
+	display: none;
+  } 
+
 
   /* Inspiration blockquote */
 .quote-block {
@@ -969,13 +978,17 @@ footer address {
     margin: 0;
 }
 
-footer sub {
+footer .mobile {
     margin: 0;
     cursor: pointer; 
 }
 
-sub:hover{
+.mobile:hover{
 	opacity: 50%;
+}
+
+footer .desktop-btt{
+	display: none;
 }
 
 /* DESKTOP VIEW */
@@ -1070,6 +1083,52 @@ sub:hover{
 	.back-to-top.one, .back-to-top.two{
 		justify-content: center;
 		margin-left: calc(var(--root-size) * 2.25);
+	}
+
+	.back-to-top.one .desktop-btt {
+		position: absolute;
+		font-size: calc(var(--root-size) * 0.5);
+		white-space: nowrap; 
+		transform: rotate(90deg); 
+		transform-origin: left bottom; 
+		line-height: 1rem; 
+		font-weight: 200;
+		margin-top: -0.5rem;
+		display: flex;
+	  }
+	
+	  .back-to-top.one .mobile {
+		display: none;
+	  }
+
+	  .back-to-top.two .desktop-btt {
+		position: absolute;
+		font-size: calc(var(--root-size) * 0.5);
+		white-space: nowrap; 
+		transform: rotate(-90deg); 
+		transform-origin: left top; 
+		line-height: 1.1rem; 
+		font-weight: 200;
+		margin-top: 5rem;
+		display: flex;
+	  }
+	
+	  .back-to-top.two .mobile{
+		display: none;
+	  } 
+
+	  footer .desktop-btt {
+		margin: 0;
+		cursor: pointer; 
+		display: flex;
+	}
+	
+	.desktop-btt:hover{
+		opacity: 50%;
+	}
+	
+	footer .mobile{
+		display: none;
 	}
 	
 	}

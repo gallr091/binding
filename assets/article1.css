@@ -1186,7 +1186,7 @@ details{
 	justify-content: center;
 } */
 
-.back-to-top.intro, .back-to-top.flatdesign, .back-to-top.modernism, .back-to-top.conclusion {
+.back-to-top.intro, .back-to-top.modernism {
 	justify-content: center;
 	margin-left: calc(var(--root-size) * 2.25);
 }
