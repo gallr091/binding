@@ -320,7 +320,7 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 15rem;
+	margin-top: 11rem;
 	position: sticky;
 	height: 13vh;
   }
@@ -338,7 +338,7 @@ header {
 	transform-origin: left top; 
 	line-height: 1.1rem; 
 	font-weight: 200;
-	margin-top: 6rem;
+	margin-top: 5rem;
   }
 
 /* 01 article styling */
@@ -468,7 +468,7 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 13rem;
+	margin-top: 9rem;
 	position: sticky;
 	height: 14vh;
   }
@@ -609,7 +609,7 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 15rem;
+	margin-top: 11rem;
 	position: sticky;
 	height: 14vh;
   }
