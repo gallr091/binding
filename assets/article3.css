@@ -1055,11 +1055,6 @@ sub:hover{
 		animation: scroll-arrows-2 10s linear infinite; 
 	}
 	
-	.arrows.intro, .arrows.modernism, .arrows.flatdesign, .arrows.conclusion {
-		padding-top: 0;
-	}
-	
-	
 	details{
 		margin-left: 1.5rem;
 	}
