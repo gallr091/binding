@@ -2,6 +2,13 @@ body{
 	overflow-x: hidden;
 }
 
+/* NAV */
+nav ul li:nth-child(4) {
+	background-color: var(--green-color);
+	color: var(--main-dark-color);
+	font-weight: 700;
+  }
+
 /* TITLE */
 header {
 	position: relative;

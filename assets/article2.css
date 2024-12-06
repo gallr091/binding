@@ -2,6 +2,13 @@ body{
 	overflow-x: hidden;
 }
 
+/* NAV */
+nav ul li:nth-child(3) {
+	background-color: var(--orange-color);
+	color: var(--main-dark-color);
+	font-weight: 700;
+  }
+
 /* TITLE */
 header {
 	position: relative;
@@ -317,8 +324,13 @@ header {
 	position: sticky;
 	height: 13vh;
   }
+
+  .desktop-btt{
+	display:none;
+  }
   
-  .back-to-top.one sub {
+  
+  .mobile {
 	position: absolute;
 	font-size: calc(var(--root-size) * 0.5);
 	white-space: nowrap; 
@@ -326,7 +338,7 @@ header {
 	transform-origin: left top; 
 	line-height: 1.1rem; 
 	font-weight: 200;
-	margin-top: 5rem;
+	margin-top: 6rem;
   }
 
 /* 01 article styling */
@@ -469,7 +481,7 @@ header {
 	transform-origin: left bottom; 
 	line-height: 1rem; 
 	font-weight: 200;
-	margin-top: -0.5rem;
+	margin-top: 0.5rem;
   }
 
 
@@ -606,7 +618,7 @@ header {
 	transform-origin: left bottom; 
 	line-height: 1rem; 
 	font-weight: 200;
-	margin-top: -0.5rem;
+	margin-top: 0.5rem;
   }
 
 /* Junot Diaz Quote */
@@ -816,6 +828,7 @@ sub:hover{
 		box-sizing: border-box;
 	}
 	
+	
 	main{
 		width: 30vw;
 		border-right: var(--border-style);
@@ -909,7 +922,26 @@ sub:hover{
 	.back-to-top.one, .back-to-top.two, .back-to-top.three, .back-to-top.conclusion {
 		justify-content: center;
 		margin-left: calc(var(--root-size) * 2.25);
+
 	}
+	.desktop-btt{
+		position: absolute;
+		font-size: calc(var(--root-size) * 0.5);
+		white-space: nowrap; 
+		transform: rotate(-90deg); 
+		transform-origin: left top; 
+		line-height: 1.1rem; 
+		font-weight: 200;
+		margin-top: 6rem;
+		display: flex;
 	}
+		  
+		  
+	 .mobile {
+			display: none;
+		} 
+		
+	}
+	
 	
 	

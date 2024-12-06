@@ -61,6 +61,11 @@ nav ul {
 	text-decoration: none;
   }
 
+  nav ul li a:hover{
+	cursor: pointer;
+	opacity: 50%;
+  }
+
   nav ul {
 	list-style-type: none;
 	margin: 0;

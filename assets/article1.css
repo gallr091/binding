@@ -2,6 +2,13 @@ body{
 	overflow-x: hidden;
 }
 
+/* NAV */
+nav ul li:nth-child(2) {
+	background-color: var(--magenta-color);
+	color: var(--main-dark-color);
+	font-weight: 700;
+  }
+
 /* TITLE */
 
 header {
@@ -491,12 +498,12 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 5.5rem;
+	margin-top: 4rem;
 	position: sticky;
 	height: 14vh;
   }
   
-  .back-to-top.intro sub {
+  .back-to-top.intro .mobile {
 	position: absolute;
 	font-size: calc(var(--root-size) * 0.5);
 	white-space: nowrap; 
@@ -504,7 +511,11 @@ header {
 	transform-origin: left bottom; 
 	line-height: 1rem; 
 	font-weight: 200;
-	margin-top: -0.5rem;
+	margin-top: 0.5rem;
+  }
+
+  .back-to-top.intro .desktop-btt{
+	display: none;
   }
   
 
@@ -595,12 +606,12 @@ header {
 	top: 0; 
 	z-index: 10;
 	width: 5vw;
-	margin-top: 5rem;
+	margin-top: 4rem;
 	position: sticky;
 	height: 15vh;
   }
   
-  .back-to-top.modernism sub {
+  .back-to-top.modernism .mobile {
 	position: absolute;
 	font-size: calc(var(--root-size) * 0.5);
 	white-space: nowrap; 
@@ -608,7 +619,11 @@ header {
 	transform-origin: left top; 
 	line-height: 1.1rem; 
 	font-weight: 200;
-	margin-top: 5rem;
+	margin-top: 5.5rem;
+  }
+
+  .back-to-top.modernism .desktop-btt {
+	display: none;
   }
 
 /* Modernism blockquote */
@@ -1054,13 +1069,17 @@ footer address {
     margin: 0;
 }
 
-footer sub {
+footer .mobile {
     margin: 0;
     cursor: pointer; 
 }
 
-sub:hover{
+footer .mobile:hover{
 	opacity: 50%;
+}
+
+footer .desktop-btt {
+	display: none;
 }
 
 
@@ -1170,6 +1189,67 @@ details{
 .back-to-top.intro, .back-to-top.flatdesign, .back-to-top.modernism, .back-to-top.conclusion {
 	justify-content: center;
 	margin-left: calc(var(--root-size) * 2.25);
+}
+
+.back-to-top.intro .desktop-btt {
+	position: absolute;
+	font-size: calc(var(--root-size) * 0.5);
+	white-space: nowrap; 
+	transform: rotate(90deg); 
+	transform-origin: left bottom; 
+	line-height: 1rem; 
+	font-weight: 200;
+	margin-top: 0.5rem;
+	display: flex;
+  }
+
+  .back-to-top.intro .desktop-btt:hover{
+	cursor: pointer;
+	opacity: 50%;
+  }
+
+  .back-to-top.intro .mobile{
+	display: none;
+  }
+
+  .back-to-top.modernism .desktop-btt {
+	position: absolute;
+	font-size: calc(var(--root-size) * 0.5);
+	white-space: nowrap; 
+	transform: rotate(-90deg); 
+	transform-origin: left top; 
+	line-height: 1.1rem; 
+	font-weight: 200;
+	margin-top: 5.5rem;
+	display: flex;
+  }
+
+  .back-to-top.modernism .mobile {
+	display: none;
+  }
+
+  .back-to-top.modernism .mobile{
+	display: none;
+  }
+  
+  .back-to-top.modernism .desktop-btt:hover{
+	cursor: pointer;
+	opacity: 50%;
+  }
+  
+
+footer .desktop-btt {
+    margin: 0;
+    cursor: pointer; 
+	display: flex;
+}
+
+footer .desktop-btt:hover{
+	opacity: 50%;
+}
+
+footer .mobile {
+	display: none;
 }
 
 }
